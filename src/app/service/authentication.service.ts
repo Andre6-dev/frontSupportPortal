@@ -59,7 +59,7 @@ export class AuthenticationService {
 
 
   // @ts-ignore
-  public isLoggedIn(): boolean {
+  public isUserLoggedIn(): boolean {
     this.loadToken();
     if (this.token != null && this.token !== '') {
       // Check if token is expired
