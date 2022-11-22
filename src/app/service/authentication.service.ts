@@ -58,7 +58,6 @@ export class AuthenticationService {
   }
 
 
-  // @ts-ignore
   public isUserLoggedIn(): boolean {
     this.loadToken();
     if (this.token != null && this.token !== '') {
